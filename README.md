@@ -11,7 +11,7 @@ Written by: Connor Anderson
 1. Open this folder in a CLI.
 2. npm i
 3. npm start
-(4). Browser page should open automatically after transpiling.
+4. Browser page should open automatically after transpiling.
 
 
 *****************************
