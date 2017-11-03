@@ -1,0 +1,125 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+h1, h2, h3{
+  margin: 0px;
+}
+
+.App {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  .header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    overflow: hidden;
+    border-bottom-color: rgb(233, 233, 233);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background:rgba(255,255,255,0.5);
+    .contentWrapper{
+      position: relative;
+      width: auto;
+      height: 80px;
+      .shuffleButton{
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        height: auto;
+        width: 100px;
+        padding: 5px;
+        background-color: white;
+        color: white;
+        cursor: pointer;
+        border-color: rgb(233, 233, 233);
+        border-style: solid;
+        border-width: 1px;
+        color: black;
+        border-radius: 5px;
+        &:hover{
+          border-color: #2196F3;
+          color: #1E88E5;
+        }
+      }
+    }
+  }
+  .listWrapper{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    height: calc(100vh - 95px);
+    overflow-y: scroll;
+    padding-top: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(https://i.imgur.com/C7wpT4M.jpg) no-repeat center center fixed;
+
+    .listItem{
+      position: relative;
+      height: 25px;
+      width: 90%;
+      border-color: rgb(233, 233, 233);
+      border-style: solid;
+      border-width: 1px;
+      border-bottom-width: 0px;
+      h3{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+      }
+      h2{
+        font-size: 12px;
+      }
+    }
+    .card{
+      position: relative;
+      height: 40px;
+      width: 60px;
+      border-color: rgb(0, 0, 0);
+      border-style: solid;
+      border-width: .5px;
+      margin: 5px;
+      background-color: #EEEEEE;
+      h3{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        margin-left: 2px;
+        font-size: 12px;
+        color: #424242;
+      }
+      h2{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        margin: 0;
+        padding: 0;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        font-size: 17px;
+      }
+    }
+  }
+}
